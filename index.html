@@ -16,8 +16,7 @@
             display: grid;
             grid-template-areas: 
                 "header header"
-                "menu content"
-                "footer footer";
+                "content content";
             grid-template-columns: 1fr 1fr;
             align-items: center;;
             height: 100vh;
@@ -36,16 +35,13 @@
             background-position: right center;
             max-width: 100%;
             padding: 50px;
+            height: 700px;
         }
-
-        footer {
-            grid-area: footer;
-            background: #333;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .content{
+            grid-area: content;
+            
         }
+        
         .header h1{
             font-size: 4em;
             font-weight: 700;
@@ -94,6 +90,19 @@
         <div class="footer">Header</div>
         <footer>&copy; 2025 All Rights Reserved</footer>
     </div>
-    
+    <div class="container">
+        <div class="content">
+            <div class="abouttitle">
+                <h1>We Live For Passion</h1>
+            </div>
+            <div class="aboutdesc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo enim ipsam et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo enim ipsam et dolore magnam aliquam quaerat voluptatem.</p>
+                <button>Contact us</button>
+            </div>
+            <div class="">
+                <img src="17.jpg.webp" alt="a lady photo" width="200px">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

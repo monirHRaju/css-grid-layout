@@ -7,9 +7,9 @@
     <style>
         body {
             margin: 0;
-            padding: 0'
-            line-height: 1.5;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            line-height: 1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         .container {
@@ -31,16 +31,12 @@
             display: block;
             font-size: 24px;
             background-image: url(1.jpg.webp);
+            background-size: cover;
             background-repeat: no-repeat;
-            background-position: top left;
+            background-position: right center;
             max-width: 100%;
             padding: 50px;
-           
         }
-        .headercontent{
-            margin-left: 100px;
-        }
-        
 
         footer {
             grid-area: footer;
@@ -51,22 +47,34 @@
             justify-content: center;
         }
         .header h1{
-            font-size: 5em;
+            font-size: 4em;
             font-weight: 700;
             background: linear-gradient(180deg, #ff9696, #ffe89e);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: block;
+            margin-bottom: 0;
         }
         .header p{
             font-size: 1em;
+            
         }
         .header button{
             background: none;
-            padding: 5px 15px;
-            border-radius: 350px;
-            border: 1px solid #ff9696;
+            padding: 15px 40px;
+            border-radius: 30px;
+            border: 2px solid #fc6060;
             color: white;
+            font-size: 16px;   
+        }
+        .header button:hover{
+            background-color: #fc6060;
+            transition: 0.7s ease;
+        }
+
+        .headercontent a{
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
         }
     </style>
 </head>
@@ -78,19 +86,14 @@
                 <h1>Hello <br>I'm Monir</h1>
             <p>I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
             <button>Get A Quote</button>
-            <a href="mailto:monirhraju@gmail.com">monirhraju@gmail.com</a>
+            <a href="mailto:monirhraju@gmail.com"><i><u>monirhraju@gmail.com</u></i></a>
             </div>
         </div>
         <div class="sidebar">Header</div>
         <div class="content">Header</div>
         <div class="footer">Header</div>
-        
-        
         <footer>&copy; 2025 All Rights Reserved</footer>
     </div>
-    .header a {
-        <!-- text-decoration:none;
-        color: white; -->
     
 </body>
 </html>

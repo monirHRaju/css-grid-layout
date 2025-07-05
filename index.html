@@ -7,6 +7,8 @@
     <style>
         body {
             margin: 0;
+            padding: 0'
+            line-height: 1.5;
             font-family: Arial, sans-serif;
         }
 
@@ -16,32 +18,29 @@
                 "header header"
                 "menu content"
                 "footer footer";
-            grid-template-columns: 200px 1fr;
-            grid-template-rows: 80px 1fr 50px;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;;
             height: 100vh;
+            
+            margin-bottom: p;
         }
 
-        header {
+        .header {
             grid-area: header;
-            background: #4CAF50;
             color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: block;
             font-size: 24px;
+            background-image: url(1.jpg.webp);
+            background-repeat: no-repeat;
+            background-position: top left;
+            max-width: 100%;
+            padding: 50px;
+           
         }
-
-        nav {
-            grid-area: menu;
-            background: #f4f4f4;
-            padding: 20px;
+        .headercontent{
+            margin-left: 100px;
         }
-
-        main {
-            grid-area: content;
-            padding: 20px;
-            background: #fff;
-        }
+        
 
         footer {
             grid-area: footer;
@@ -51,26 +50,47 @@
             align-items: center;
             justify-content: center;
         }
+        .header h1{
+            font-size: 5em;
+            font-weight: 700;
+            background: linear-gradient(180deg, #ff9696, #ffe89e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+        }
+        .header p{
+            font-size: 1em;
+        }
+        .header button{
+            background: none;
+            padding: 5px 15px;
+            border-radius: 350px;
+            border: 1px solid #ff9696;
+            color: white;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>My Simple Website</header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1>Welcome to My Website</h1>
-            <p>This is a simple layout using CSS Grid. You can adjust the areas as you like.</p>
-        </main>
+        <div class="header">
+            <div class="headercontent">
+                <h1>Hello <br>I'm Monir</h1>
+            <p>I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
+            <button>Get A Quote</button>
+            <a href="mailto:monirhraju@gmail.com">monirhraju@gmail.com</a>
+            </div>
+        </div>
+        <div class="sidebar">Header</div>
+        <div class="content">Header</div>
+        <div class="footer">Header</div>
+        
+        
         <footer>&copy; 2025 All Rights Reserved</footer>
     </div>
-
+    .header a {
+        <!-- text-decoration:none;
+        color: white; -->
+    
 </body>
 </html>

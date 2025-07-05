@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid Tutorial
+    <title>Simple Grid Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "menu content"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 50px;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        nav {
+            grid-area: menu;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: content;
+            padding: 20px;
+            background: #fff;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
 <body>
-    <h1>Welcome to CSS Grid Tutorial</h1>
+
+    <div class="container">
+        <header>My Simple Website</header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Welcome to My Website</h1>
+            <p>This is a simple layout using CSS Grid. You can adjust the areas as you like.</p>
+        </main>
+        <footer>&copy; 2025 All Rights Reserved</footer>
+    </div>
+
 </body>
 </html>
